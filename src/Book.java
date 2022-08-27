@@ -28,6 +28,5 @@ public class Book {
     }
     public String printBook() {
         return this.author.getFirstName() + " " + this.author.getLastName() + " " + this.name + " " + this.yearPublishing;
-
     }
 }

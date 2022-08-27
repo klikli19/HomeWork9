@@ -10,6 +10,7 @@ public class Main {
         books[2] = book3;
         addNewBook(new Book("Идиот.", new Author("Федор", "Достоевский."), 1869), books);
         printAllBooks(books);
+
     }
     public static void addNewBook(Book book, Book[] books) {
         for (int i = 0; i < books.length; i++) {
