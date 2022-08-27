@@ -8,7 +8,10 @@ public class Book {
         this.author = author;
         this.yearPublishing = yearPublishing;
     }
-
+    public Book (String name, String firstName, String lastName){
+        this.name = name;
+        this.author = new Author(firstName,lastName);
+    }
     public String getName() {
         return name;
     }
@@ -22,5 +25,9 @@ public class Book {
     }
     public void setYearPublishing (int yearPublishing){
         this.yearPublishing = yearPublishing;
+    }
+    public String printBook() {
+        return this.author.getFirstName() + " " + this.author.getLastName() + " " + this.name + " " + this.yearPublishing;
+
     }
 }
