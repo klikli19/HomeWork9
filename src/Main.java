@@ -8,25 +8,6 @@ public class Main {
         books[0] = book1;
         books[1] = book2;
         books[2] = book3;
-        addNewBook(new Book("Идиот.", new Author("Федор", "Достоевский."), 1869), books);
-        printAllBooks(books);
-
-    }
-    public static void addNewBook(Book book, Book[] books) {
-        for (int i = 0; i < books.length; i++) {
-            if (books[i] == null) {
-                books[i] = book;
-                return;
-            }
-        }
     }
 
-    public static void printAllBooks(Book[] books) {
-        for (Book book : books) {
-            if (book != null) {
-                System.out.println(book.printBook());
-            }
-
-        }
-    }
 }
